@@ -1,0 +1,3 @@
+# Gerado automaticamente a partir do pyproject.toml
+numpy>=2.3.4,<3.0.0
+scipy>=1.16.3,<2.0.0

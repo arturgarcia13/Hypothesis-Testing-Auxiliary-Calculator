@@ -1,0 +1,30 @@
+[project]
+name = "calculadora-testes-hipoteses"
+version = "0.1.0"
+description = "Calculadora estatística interativa para testes de hipóteses"
+authors = [
+    {name = "Arthur Garcia", email = "arturgarcia046@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.3.4,<3.0.0",
+    "scipy>=1.16.3,<2.0.0"
+]
+keywords = ["estatística", "testes-hipóteses", "análise-inferencial", "python", "educação"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Education",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
