@@ -28,14 +28,23 @@ Obrigado pelo interesse em contribuir! Este guia ajudará você a começar.
 ### Executando o Projeto
 
 ```bash
-python calculadora_testes_hipoteses.py
+python hypothesis_calc.py
 ```
 
 ### Estrutura do Código
 
-- **`calculadora_testes_hipoteses.py`**: Código principal com todas as funções
+- **`hypothesis_calc.py`**: Código principal modular (versão atual)
+- **`calculadora_testes_hipoteses.py`**: Versão anterior (para referência)
 - **`fórmulas_principais.md`**: Documentação das fórmulas estatísticas
 - **`pyproject.toml`**: Configurações do projeto e dependências
+
+### Características do Código Atual
+
+- **Modularidade**: Cada teste em função separada
+- **Type Hints**: Anotações de tipo completas
+- **Flexibilidade**: Suporte a entrada resumida ou completa
+- **Validação**: Verificações robustas de parâmetros
+- **Clareza**: Interface numerada e intuitiva
 
 ### Diretrizes de Contribuição
 
