@@ -186,6 +186,9 @@ def test_diff_means_equal_variances(
     t_crit_bilateral = stats.t.ppf(1 - alpha/2, df)
     t_crit_unilateral = stats.t.ppf(1 - alpha, df)
     
+    q1 = x_bar_1 - x_bar_2 - t_crit_bilateral*s_p * np.sqrt(1/n_1 + 1/n_2)
+    q2 = x_bar_1 - x_bar_2 + t_crit_bilateral*s_p * np.sqrt(1/n_1 + 1/n_2)
+    
     return {
         "x_bar_1": round(x_bar_1, 2),
         "x_bar_2": round(x_bar_2, 2),
@@ -199,7 +202,8 @@ def test_diff_means_equal_variances(
         "t_calc": round(t_calc, 2),
         "df": df,
         "t_critico_bilateral": round(t_crit_bilateral, 2),
-        "t_critico_unilateral": round(t_crit_unilateral, 2)
+        "t_critico_unilateral": round(t_crit_unilateral, 2),
+        "IC": f"[{round(q1,2)}, {round(q2,2)}]"
     }
 
 
